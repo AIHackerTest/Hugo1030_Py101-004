@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block content %}
+    <p align="center">以下是历史查询信息</p>
+    <p align='center'>
+    {% for weather_str in history_list %}
+    {{ weather_str }}<br>
+    {% endfor %}
+    </p>
+{% endblock %}
